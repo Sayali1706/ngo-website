@@ -1,0 +1,483 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+  background: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+
+}
+
+a {
+  color: #18d26e;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #18d36e;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header
+{
+	background:#000000;
+	color:#ffffff;
+	height:90px;	
+	border-bottom:3px solid #FF5821;
+}
+
+#logo a img{
+    height: 65px;
+    /*margin-top: 10px;*/
+    margin:10px 15px 0px 15px;
+}
+
+#nav
+{
+	
+	float:right;
+}
+#nav ul
+{
+	list-style-type:none;
+}
+#nav ul li
+{
+	display:inline-block;
+	padding:15px;
+	margin:15px 20px 0px 20px;
+	text-transform:uppercase;
+}
+ul li a
+{
+	color:white;
+	text-decoration:none;
+}
+ul li a:hover
+{
+     /*background-color:red;*/
+     background-color: #ffffff;
+  color: #FF5821;
+  padding: 5px;
+}
+
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
+
+#carouselExampleIndicators img{
+	height: 90vh;
+	width: 100%;
+	}
+
+.hea {
+	margin-bottom: 350px;
+  /*transform:translateY(-450px); */
+    color: #0B0A10;
+    text-decoration: blink;
+    margin-left: 400px;
+    text-shadow: 2px 2px 5px #FF5821;
+    border-style: ridge;
+    border-radius: 13px;
+    border-color: #9D9AAB;
+
+}
+.hea p, .hea1 p{
+	font-size: 20px;
+}
+
+.hea button:hover{
+    color: black;
+    background-color: #FF5821;
+}
+
+.hea1 {
+	margin-bottom: 350px;
+  /*transform:translateY(-450px);*/
+    color: #0B0A10;
+    text-decoration: blink;
+    margin-left: 50px;
+    text-shadow: 2px 2px 5px #FF5821;
+    border-style: ridge;
+    border-radius: 23px;
+    border-color: #9D9AAB;
+  } 
+
+/*--------------------------------------------------------------
+# Awards
+--------------------------------------------------------------*/
+.aw_head h1{
+	text-align: center;
+	color: #FF5821;
+}
+
+.aw_head p{
+	text-align: center;
+	color: black;
+	font-size: 20px;
+	font-family: arial;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 60vh;
+  background: url("../images/bk1.jpg") center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin-bottom: -120px;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  z-index: 2;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#hero h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+#hero .get-started-icon {
+  font-size: 24px;
+  background: #ff5821;
+  padding: 14px;
+  color: #fff;
+  border-radius: 50px;
+  position: relative;
+  z-index: 5;
+  box-shadow: 10px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: 0.5s;
+  margin-left: -10px;
+  padding: 8px 26px 8px 26px;
+  color: #fff;
+  background: #584b48;
+  border-radius: 0 50px 50px 0;
+  position: relative;
+  z-index: 4;
+}
+
+#hero .btn-get-started:hover {
+  background: #ff5821;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 1024px) {
+  #hero {
+    margin-bottom: -150px;
+  }
+
+nav ul
+  {
+    display:none; 
+  }
+  .hea 
+  {
+    transform:translateY(-100px); 
+  }
+  .hea1 
+  {
+    transform:translateY(-100px); 
+  }
+}
+
+@media (max-height: 768px) {
+  #hero {
+    margin-bottom: -150px;
+  }
+}
+
+@media only screen and (max-width: 768px)
+{
+  .carousel-caption
+  {
+    display:block !important; 
+  }
+
+/*@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}*/
+
+nav ul
+  {
+    display:none; 
+  }
+  .hea1
+  {
+    margin:0px auto;   
+  }
+
+  .hea 
+  {
+    margin:0px auto;   
+  }
+}
+
+
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+.why-us {
+  padding: 0 0 30px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.why-us .content {
+  padding: 30px;
+  background: #ff5821;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.why-us .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.why-us .content p {
+  margin-bottom: 30px;
+}
+
+.why-us .content .more-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.why-us .content .more-btn i {
+  font-size: 14px;
+}
+
+.why-us .content .more-btn:hover {
+  color: #ff5821;
+  background: #fff;
+}
+
+.why-us .icon-boxes .icon-box {
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  width: 100%;
+}
+
+.why-us .icon-boxes .icon-box i {
+  font-size: 40px;
+  color: #ff5821;
+  margin-bottom: 30px;
+}
+
+.why-us .icon-boxes .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.why-us .icon-boxes .icon-box p {
+  font-size: 15px;
+  color: #716f6f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# Image Gallery
+--------------------------------------------------------------*/
+
+.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
+/*--------------------------------------------------------------
+# Our Projects
+--------------------------------------------------------------*/
+
+#proj h2 {
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  position: relative;
+  margin: 30px 0 60px;
+}
+#proj h2::after {
+  content: "";
+  width: 100px;
+  position: absolute;
+  margin: 0 auto;
+  height: 3px;
+  background: #8fbc54;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+.col-center {
+  margin: 0 auto;
+  float: none !important;
+}
+#proj .carousel {
+  margin: 50px auto;
+  padding: 0 70px;
+}
+#proj .carousel .item {
+  color: #999;
+  font-size: 14px;
+    text-align: center;
+  overflow: hidden;
+    min-height: 290px;
+}
+#proj .carousel .item .img-box {
+  width: 135px;
+  height: 135px;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+#proj .carousel .img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+#proj .carousel .testimonial {
+  padding: 30px 0 10px;
+}
+#proj .carousel .overview { 
+  font-style: italic;
+}
+#proj .carousel .overview b {
+  text-transform: uppercase;
+  color: #7AA641;
+}
+#proj .carousel .carousel-control {
+  width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+  background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+  line-height: 42px;
+    position: absolute;
+    display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+#proj .carousel .carousel-indicators {
+  bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+  width: 10px;
+  height: 10px;
+  margin: 1px 3px;
+  border-radius: 50%;
+}
+.carousel-indicators li { 
+  background: #999;
+  border-color: transparent;
+  box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {  
+  background: #555;   
+  box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
